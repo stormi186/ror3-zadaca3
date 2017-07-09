@@ -1,0 +1,29 @@
+<h3>Products from this <%= params[:controller] == 'categories' ? 'category' : 'seller' %></h3>
+
+	<table class="table table-condensed table-striped">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th><%= params[:controller] == 'categories' ? 'Seller' : 'Category' %></th>
+      <th class="pull-right">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% model.products.each do |product| %>
+      <tr>
+        <td><%= product.id %></td>
+        <td><%= link_to product.name, product_path(product) %></td>
+        <td><%= product.price %></td>
+        <td><%= params[:controller] == 'categories' ? product.seller.name : product.category.name %></td>
+        <td>
+        <div class="btn-group pull-right">
+          <%= link_to 'Edit', edit_product_path(product), class: 'btn btn-sm btn-primary' %>
+          <%= link_to 'Delete', product_path(product), method: :delete, data: {confirm: "Are you sure?"}, class: 'btn btn-sm btn-danger' %>
+        </div>
+        </td>
+      </tr>
+    <% end %>
+ </tbody>
+</table>

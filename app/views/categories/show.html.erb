@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-md-7">
+    <div class="panel panel-info">
+			<div class="panel-heading clearfix">
+				<div class="btn-group pull-right">
+					<%= link_to 'Edit', edit_category_path(@category), class: 'btn btn-sm btn-primary' %>
+					<%= link_to 'Delete', category_path(@category), method: :delete, data: {confirm: "Are you sure?"}, class: 'btn btn-sm btn-danger' %>
+				</div>
+				<h5><strong><%= @category.name %></strong></h5>
+			</div>
+			<div class="panel-body">
+				<dl class="dl-horizontal">
+					<dt>Description:</dt>
+					<dd><%= @category.description %></dd>
+					<dt>Number of products:</dt>
+					<dd><%= @category.products.count %></dd>
+				</dl>
+    	</div>
+		</div>
+		<hr>
+		<%= render 'shared/products_filter', model: @category %>
+	</div>
+</div>
+
+
