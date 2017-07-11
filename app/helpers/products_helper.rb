@@ -1,5 +1,13 @@
 module ProductsHelper
-  def count_for(products, message = 'Count')
-    content_tag :h2, "#{message} #{products.count}"
+  def time_for(product)
+  	product.created_at.strftime("%Y-%m-%d")
+  end
+
+  def category_for(product)
+  	product.category.name
+  end
+
+  def seller_for(product)
+  	product.seller.name
   end
 end

@@ -16,4 +16,12 @@ module ApplicationHelper
   def parse_attribute(attribute)
     attribute.to_s.capitalize.split('_').join(' ')
   end
+
+  def count_for(model, message = 'Count')
+    content_tag :h2, "#{message} #{model.count}"
+  end
+
+  def count_products_for(model)
+  	model.products.count
+  end
 end

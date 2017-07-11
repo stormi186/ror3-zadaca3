@@ -7,5 +7,5 @@
   <%= form.text_area :description, class: 'form-control' %>
   <%= error_for :description, @category.errors %>
   <br>
-  <%= form.submit params[:action] == 'new' ? 'Save' : 'Update', class: 'btn btn-block btn-default' %>
+  <%= form.submit params[:action] == 'new' ? 'Save' : 'Update', class: 'btn btn-block btn-primary' %>
 <% end %>

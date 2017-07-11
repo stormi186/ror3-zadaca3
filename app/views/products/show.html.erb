@@ -15,9 +15,9 @@
 					<dt>Description:</dt>
 					<dd><%= @product.description %></dd>
 					<dt>Seller:</dt>	
-					<dd><%= @product.seller.name %></dd>
+					<dd><%= seller_for(@product) %></dd>
 					<dt>Category:</dt>	
-					<dd><%= @product.category.name %></dd>
+					<dd><%= category_for(@product) %></dd>
 				</dl>
     	</div>
 		</div>

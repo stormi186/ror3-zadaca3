@@ -9,6 +9,7 @@
 Seller.create!(name: 'Domod', rating: 4)
 Seller.create!(name: 'Imtec', rating: 5)
 Seller.create!(name: 'eKupi', rating: 5)
+Seller.create!(name: 'Univerzalno', rating: 5)
 
 Category.create!(name: 'IT', description: 'Laptops, tablets, PCs')
 Category.create!(name: 'Audio and Video', description: 'TVs and home theaters')
@@ -21,6 +22,7 @@ Product.create!(name: 'Nutribullet Pro', price: 300.0, description: '900 W', sel
 Product.create!(name: 'Game PC', price: 2269.1, description: 'Intel Core i7', seller_id: 2, category_id: 1)
 Product.create!(name: 'LG Smart TV', price: 5387.8, description: 'Full HD', seller_id: 2, category_id: 2)
 Product.create!(name: 'Samsung Fridge', price: 2129.0, description: 'Vertical split', seller_id: 2, category_id: 3)
+Product.create!(name: 'Gorenje Fridge', price: 1188.0, description: 'Cool breeze', seller_id: 2, category_id: 3)
 
 Product.create!(name: 'iPad Pro', price: 2499.0, description: 'Wi-Fi', seller_id: 3, category_id: 1)
 Product.create!(name: 'Sony Smart TV', price: 1555.5, description: '4K', seller_id: 3, category_id: 2)

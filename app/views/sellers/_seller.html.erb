@@ -1,7 +1,7 @@
 <tr>
   <td><%= link_to seller.name, seller_path(seller) %></td>
   <td><%= seller.rating %></td>
-  <td><%= seller.products.count %></td>
+  <td><%= count_products_for(seller) %></td>
   <td>
   <div class="btn-group">
     <%= link_to 'Edit', edit_seller_path(seller), class: 'btn btn-sm btn-primary' %>
