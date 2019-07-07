@@ -1,25 +1,8 @@
-# README
+# Products/sellers/caegories database
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# ror3-zadaca3
+  - Every product must have a category
+  - Category has a name(can't be empty) and description
+  - You can create new sellers and categories and add products
+  - You can view tables with products/categories/sellers
+  - There are actions to edit or delete
+  - THere is also a date shown when something was created
